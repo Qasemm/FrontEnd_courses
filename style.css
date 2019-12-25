@@ -1,0 +1,149 @@
+*{
+	outline: none;
+}
+body{
+    background-color: #F0F2F2 ;
+outline: none;
+  }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+     background-color:black; 
+    color: black;
+  }
+  li {
+    float: left;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+    height:31px;
+    font-family: sans-serif;
+    font-weight:bold;
+
+  }
+  li a:hover:not(.active) {
+   background-color: gray;
+   
+    height: 31px;
+	opacity:0.8;
+	color: white;
+  }
+  a{
+   /* text-decoration:underline;*/
+    color:black;
+  }
+  .right{
+  	float: right;
+  }
+  h1{
+  	text-align: center;
+  }
+  h3{
+  	margin-top: 10px;
+  	margin-left: 10px;
+  	padding: 10px;
+
+  }
+  .course{
+width:20%;
+height:200px;
+background-color: red;
+transition: 0.6s;
+background-color: white;
+transform: 0.7s;
+float: left;
+margin: 10px;
+
+  }
+.course:hover{
+	      transform: scale(1.1);
+}
+.remove{
+  width:20px;
+  height: 20px;
+  float: right;
+  margin-top: -8px;
+  padding: 10px;
+    cursor: pointer;
+/* display: none;*/
+}
+.course:hover a .remove{
+  display: inline-block;
+}
+.MoreInfo{
+	width: 70%;
+	height: 30px;
+	color: white;
+	background-color:#282657;
+  margin-left: 35px;
+	   margin-top: 10px;
+	   border-style: none;
+	     cursor: pointer;
+}
+.MoreInfo:hover{
+	opacity: 0.7;
+}
+p{
+	margin-left: 10px;
+}
+.AllCourses{
+	margin-left: 20px;
+    margin-right: 20px
+}
+.ShowMore{
+	margin-top: 30px;
+	cursor: pointer;
+	width: 60%;
+	height: 50px;
+	margin-left: 100px;
+	text-align: center;
+	align-content: center;
+	background-color: #282657;
+	color: white;
+}
+.addAcountIcon{
+ margin-left:1000px;
+border-style: none;
+  width: 50px;
+  height: 50px;
+}
+.form{
+    width: 30% ;
+    height: 30%;
+    background-color: #ffffff;
+    margin: 15 0 0 15;
+    float: left;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: 0.6s;
+
+}
+.form:hover{
+    transform: scale(1.05);
+
+}
+
+img{
+    width: 100%;
+    margin: 10 0 0 10;
+    border: #ffffff 3px solid;
+    border-radius: 50%;
+}
+.im{
+    width: 30%;
+    float: left;
+}
+.contnt{
+    width: 60%;
+    height: 100%;
+    background-color: #ffffff;
+    float: right;
+    font-family: inherit;
+    border-radius: 10%;
+}
