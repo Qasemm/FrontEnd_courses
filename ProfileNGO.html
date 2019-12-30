@@ -66,7 +66,7 @@
     outline: none;
     float: right;
    margin-top: -37px;
-   margin-right: 5px;
+   margin-right: 60px;
 }
  body{
      background-color: #f0f2f2 ;
@@ -196,7 +196,7 @@ ul {
 	<ul>
     <li><a class="bar" href="index.html">Home</a></li>
     <li><a class="bar" href="trainers.html">Trainer</a></li>
-    <li><a class="bar" href="NGoProfile.html">Profile</a></li>
+    <li><a class="bar" href="ProfileNGO.html">Profile</a></li>
       <li class="right"><a>log out</a></li>
 </ul>	
 </div>
@@ -205,7 +205,7 @@ ul {
     <div   class="profile"  >
      <div class="profileImg">
        <label>
-      <img src="user_icon.jpg" alt="" id="preview">
+      <img src="img/user_icon.jpg" alt="" id="preview">
      
       <input onclick="changeImage()"  class="input" type="file" id="filetag" style="visibility: hidden;"></label>
     </div>
@@ -221,12 +221,12 @@ ul {
     <input type="email" class="input" value="ngo@gmail.com"></input>
 </div>
 <div class="txt">
-<a  class="linkPassword" href="#">Password </a>
+<a title="Change Password" class="linkPassword" href="#">Password </a>
 </div>
     </div>
   </div>
   <div class="Bio">
-    <h2>NGO Name <img id="EditId" class="EditIcon" src="iconfinder_edit.png" onclick="change_value()"></h2>
+    <h2>NGO Name <img id="EditId" class="EditIcon" src="img/iconfinder_edit.png" onclick="change_value()"></h2>
     <h3>Bio: </h3>
     <textarea class="input" id="BioId">aaaaaaaaaaaaaaaaaaaa</textarea>
     <div class="btn">
@@ -254,6 +254,22 @@ ul {
           
           inputs[i].removeAttribute("readonly");
           inputs[i].style.backgroundColor="white";
+
+           var fileTag = document.getElementById("filetag");
+preview = document.getElementById("preview"); 
+fileTag.addEventListener("change", function() {
+changeImage(this);
+});
+function changeImage(input) {
+var reader;
+if (input.files && input.files[0]) {
+ reader = new FileReader();
+ reader.onload = function(e) {
+   preview.setAttribute('src', e.target.result);
+ }
+ reader.readAsDataURL(input.files[0]);
+}}
+
          
       }
     };
@@ -274,20 +290,6 @@ ul {
       save_btn.style.display="none";
       cancle_btn.style.display="none";
     }
- var fileTag = document.getElementById("filetag");
-preview = document.getElementById("preview"); 
-fileTag.addEventListener("change", function() {
-changeImage(this);
-});
-function changeImage(input) {
-var reader;
-if (input.files && input.files[0]) {
- reader = new FileReader();
- reader.onload = function(e) {
-   preview.setAttribute('src', e.target.result);
- }
- reader.readAsDataURL(input.files[0]);
-}}
 </script>
 </body>
 </html>

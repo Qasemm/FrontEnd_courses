@@ -50,8 +50,11 @@ ul {
   	padding: 10px;
 
   }
-  .course{
-width:20%;
+  .container{
+				margin-left:30px;
+			} 
+  .list{
+width:30%;
 height:200px;
 background-color: red;
 transition: 0.6s;
@@ -61,19 +64,19 @@ float: left;
 margin: 10px;
 
   }
-.course:hover{
+.list:hover{
 	      transform: scale(1.1);
 }
 .remove{
   width:20px;
   height: 20px;
   float: right;
-  margin-top: -8px;
+  margin-top: -13px;
   padding: 10px;
     cursor: pointer;
 /* display: none;*/
 }
-.course:hover a .remove{
+.list:hover a .remove{
   display: inline-block;
 }
 .MoreInfo{
@@ -101,7 +104,7 @@ p{
 	cursor: pointer;
 	width: 60%;
 	height: 50px;
-	margin-left: 100px;
+	margin-left: 200px;
 	text-align: center;
 	align-content: center;
 	background-color: #282657;
@@ -114,15 +117,16 @@ border-style: none;
   height: 50px;
 }
 .form{
-    width: 30% ;
-    height: 30%;
-    background-color: #ffffff;
-    margin: 15 0 0 15;
-    float: left;
-    border-radius: 10%;
-    cursor: pointer;
-    transition: 0.6s;
-
+	width:30%;
+height:200px;
+background-color: #ffffff;
+transition: 0.6s;
+background-color: white;
+transform: 0.7s;
+float: left;
+margin: 10px; 
+cursor: pointer;
+ /*margin: 15 0 0 15;*/
 }
 .form:hover{
     transform: scale(1.05);
@@ -132,8 +136,8 @@ border-style: none;
 img{
     width: 100%;
     margin: 10 0 0 10;
-    border: #ffffff 3px solid;
-    border-radius: 50%;
+ /*   border: #ffffff 3px solid;*/
+   /* border-radius: 50%;*/
 }
 .im{
     width: 30%;
@@ -143,7 +147,74 @@ img{
     width: 60%;
     height: 100%;
     background-color: #ffffff;
-    float: right;
     font-family: inherit;
     border-radius: 10%;
 }
+ .EditIcon{
+     width: 20px;
+     height: 20px;
+     background-color: #f0f2f2 ;
+     cursor: pointer;
+ }
+
+ .savebtn{
+     background-color:#0793C8;
+     height: 38px;
+     width:155px;
+     border-radius: 10px;
+     outline: none;
+     font-size: 16px;
+ }
+ .Canclebtn{
+     font-size: 16px;
+     height: 38px;
+     width:155px;
+     border-radius: 10px;
+     outline: none;
+     float: right;
+    margin-top: -37px;
+    margin-right: 100px; 
+ }
+ .link{
+     margin-top: 20px;
+ }
+ .btn{
+    margin-top: 90px;
+}
+ .textBio{
+     width:400px;
+     height: 200px;
+     border-style: none;
+ }
+ #BioId{
+    width:400px ;
+    height: 300px;
+    border-style: none;
+ }
+ .profileImg{
+     width: 200px;
+     cursor: pointer;
+ }
+ .infoProfile{
+     background-color: #ffffff;
+ }
+ .Bio{
+     width: 40%; 
+     float: left;
+     margin-left: 4%;
+     height: 300px;
+ }
+ .profile{
+    float: left;
+     position: relative;
+     background-color: white;
+     transition: 0.6s;
+ }
+input{
+  margin-left: 10px;
+}
+ /* img{
+     width: 100%;
+     border:3px none;
+     cursor: pointer;
+ }*/
